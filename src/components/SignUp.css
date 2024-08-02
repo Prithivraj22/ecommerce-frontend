@@ -1,0 +1,82 @@
+.login-div {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffcdac;
+}
+
+.login-cont {
+    border: 5px solid #fa4659;
+    border-radius: 20px;
+    min-height: 350px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.login-cont .username-cont{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.login-cont .password-cont{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-cont .email-cont {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+.login-cont input {
+    border: 2px solid #fa4659;
+    border-radius: 20px;
+    width: 180px;
+    height: 30px;
+    padding: 0 20px;
+}
+
+.login-cont input:focus{
+    outline: none;
+
+}
+
+.login-cont .submit-cont .submit-btn{
+    border: 2px solid transparent;
+    background-color: #fa4659;
+    color: white;
+    width: 75px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.login-cont .submit-cont .submit-btn:hover{
+    border: 2px solid #fa4659;
+    background-color: transparent;
+    color: white;
+    width: 75px;
+    height: 30px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+
+
+.login-signup-link {
+    color: #ffcdac;
+}

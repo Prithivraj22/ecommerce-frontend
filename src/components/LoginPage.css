@@ -1,0 +1,92 @@
+/* Shared styles for both login and signup pages */
+.login-div {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; /* Match main background color */
+}
+
+.login-cont {
+    border: 1px solid #fb5555; 
+    border-radius: 20px;
+    min-height: 460px;
+    min-width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 80px;
+    padding: 30px 20px;
+}
+
+.error-message{
+    margin-top: 2px;
+margin-bottom: -28px;
+}
+
+.login-cont .username-cont,
+.login-cont .password-cont,.login-cont .email-cont,.login-cont .confirm-password-cont {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 85px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+.login-cont .email-cont{
+    gap: 119px;
+}
+
+.login-cont .confirm-password-cont{
+    /* display: none; */
+    gap: 20px;
+}
+
+.login-cont input {
+    border: 1px solid #fb5555;
+    border-radius: 10px;
+    width: 200px; 
+    height: 35px; 
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+.login-cont input:focus {
+    outline: none;
+    border-color: #ff6b6b; /* Match main hover color */
+}
+
+.login-cont .submit-cont .submit-btn {
+    border: 1px solid transparent;
+    background-color: #fb5555; /* Match main button color */
+    color: white;
+    border-radius: 10px;
+    width: 200px; 
+    height: 45px; 
+    padding: 0 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-cont .submit-cont .submit-btn:hover {
+    border: 2px solid #fb5555;
+    background-color: transparent;
+    color: #fb5555;
+    transform: scale(1.1);
+}
+
+.login-signup-link {
+    color: #7860d6; /* Match link color */
+    margin-top: 10px;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.login-signup-link:hover {
+    color: #ff6b6b; /* Match main hover color */
+    transform: scale(1.1);
+}
