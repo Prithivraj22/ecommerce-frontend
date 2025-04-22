@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../styles/styles.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const LoginPage = ({ setUser, setUsername,setSubid }) => {
   const [username, setLocalUsername] = useState('');
@@ -32,7 +35,7 @@ const LoginPage = ({ setUser, setUsername,setSubid }) => {
 
   return (
     <div className="login-div">
-      
+      // <ToastContainer position="top-center" />
       <form onSubmit={handleSubmit} className="login-cont">
       <h2 style={{color: "black"}}>Login</h2>
         <img src="" alt="" srcSet="" />
