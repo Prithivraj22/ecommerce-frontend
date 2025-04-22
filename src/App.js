@@ -10,6 +10,8 @@ import { useState } from 'react';
 import axios from 'axios';
 import Search from './components/Search';
 import ProductDetail from './components/ProductDetail';
+// import { ToastContainer } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [username, setUsername] = useState("Login to view Username");
@@ -40,6 +42,7 @@ function App() {
   return (
     <Router>
       <div>
+        // <ToastContainer position="top-center" />
         <Navbar setUsername={setUsername} username={username} subid={subid} />
         <Routes>
           <Route path="/" element={<LoginPage setUser={setUser} setSubid={setSubid} setUsername={setUsername}  />} />
