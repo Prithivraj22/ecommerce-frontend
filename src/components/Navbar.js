@@ -26,7 +26,7 @@ const Navbar = ({ username, setUsername,subid }) => {
   };
 
   return (
-    <nav className="navbar">
+    <nav className="bg-gray-800 text-white p-4 flex justify-between">
       <Link to='/home' className='iconLink'>
         <FaHome style={{marginTop:"8px"}}  size={20} />
       </Link>
