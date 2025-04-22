@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 import { useState } from 'react';
 import axios from 'axios';
 import Search from './components/Search';
+import ProductDetail from './components/ProductDetail';
 
 function App() {
   const [username, setUsername] = useState("Login to view Username");
@@ -46,6 +47,7 @@ function App() {
           <Route path="/home" element={<Home setUsername={setUsername} user={user} addToCart={addToCart} />} />
           <Route path="/item/:id" element={<ItemDetail addToCart={addToCart} username={username} />} />
           <Route path="/cart" element={<CartPage user={username} />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
           <Route path='/search' element={<Search/>}></Route>
         </Routes>
       </div>
