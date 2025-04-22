@@ -8,6 +8,19 @@ const Home = ({ setUsername, addToCart,user }) => {
   const [items, setItems] = useState([]);
   const location = useLocation();
   const { us_name } = location.state || {}; 
+
+//   const [loading, setLoading] = useState(true);
+
+// useEffect(() => {
+//   const fetchProducts = async () => {
+//     setLoading(true);
+//     const res = await axios.get(`${API}/product/all`);
+//     setProducts(res.data.products);
+//     setLoading(false);
+//   };
+//   fetchProducts();
+// }, []);
+
   
 
   useEffect(() => {
